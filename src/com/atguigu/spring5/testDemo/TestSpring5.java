@@ -1,5 +1,7 @@
 package com.atguigu.spring5.testDemo;
 
+import com.atguigu.spring5.Book;
+import com.atguigu.spring5.Orders;
 import com.atguigu.spring5.User;
 import lombok.Data;
 import org.junit.Test;
@@ -30,6 +32,40 @@ public class TestSpring5 {
         String name = userClass.getName();
 
         System.out.println(name);
+
+    }
+
+    @Test
+    public void testBook1(){
+
+        //1加载spring配置文件
+        //BeanFactory的子接口，更强大
+        ApplicationContext context=
+                new ClassPathXmlApplicationContext("bean1.xml");
+
+        //BeanFactory context=
+        new ClassPathXmlApplicationContext("bean1.xml");
+        //获取配置文件的对象
+        Book book = context.getBean("book", Book.class);
+        System.out.println(book);
+        book.tsetBool1();
+
+    }
+
+    @Test
+    public void testOrder1(){
+
+        //1加载spring配置文件
+        //BeanFactory的子接口，更强大
+        ApplicationContext context=
+                new ClassPathXmlApplicationContext("bean1.xml");
+
+        //BeanFactory context=
+        new ClassPathXmlApplicationContext("bean1.xml");
+        //获取配置文件的对象
+        Orders orders = context.getBean("orders", Orders.class);
+        System.out.println(orders);
+        orders.tsetOrder1();
 
     }
 }
