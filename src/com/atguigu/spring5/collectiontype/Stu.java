@@ -49,11 +49,19 @@ public class Stu {
         this.sets = sets;
     }
 
+    private List<Course> courseList;
+
+
+    public void setCourseList(List<Course> courseList) {
+        this.courseList = courseList;
+    }
+
     public void test(){
 
         System.out.printf(Arrays.toString(course));
         System.out.printf(list.toString());
         System.out.printf(maps.toString());
         System.out.printf(sets.toString());
+        System.out.printf(courseList.toString());
     }
 }

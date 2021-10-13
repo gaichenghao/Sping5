@@ -37,5 +37,22 @@
                 <value>redis</value>
             </set>
         </property>
+        <!--注入List集合类型，值是对象-->
+        <property name="courseList">
+
+            <list>
+                <ref bean="course1"></ref>
+                <ref bean="course2"></ref>
+            </list>
+
+        </property>
     </bean>
+    <!--创建对个course对象-->
+    <bean id="course1" class="com.atguigu.spring5.collectiontype.Course">
+        <property name="cname" value="Spring5课程"></property>
+    </bean>
+    <bean id="course2" class="com.atguigu.spring5.collectiontype.Course">
+        <property name="cname" value="Mybatis课程"></property>
+    </bean>
+
 </beans>

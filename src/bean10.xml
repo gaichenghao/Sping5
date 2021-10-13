@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <!-- 配置连接池 -->
+    <!-- DruidDataSource dataSource = new DruidDataSource(); -->
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        &lt;!&ndash; dataSource.setDriverClassName("com.mysql.jdbc.Driver");-->
+<!--            set方法注入-->
+<!--        &ndash;&gt;-->
+<!--        &lt;!&ndash; 获取properties文件内容，根据key获取，使用spring表达式获取 &ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="url" value="jdbc:mysql://localhost:3306/db2021"></property>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="username" value="root"></property>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="password" value="root"></property>&ndash;&gt;-->
+<!--        <property name="driverClassName" value="${pr}"></property>-->
+<!--        <property name="url" value="jdbc:mysql://localhost:3306/db2021"></property>-->
+<!--        <property name="username" value="root"></property>-->
+<!--        <property name="password" value="root"></property>-->
+<!--    </bean>-->
+
+    <!--引入外部属性文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <!--直接配置连接池-->
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${prop.diverClass}"></property>
+        <property name="url" value="${prop.url}"></property>
+        <property name="username" value="${prop.username}"></property>
+        <property name="password" value="${prop.password}"></property>
+    </bean>
+
+</beans>
