@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/AOP/pom.xml" />
         <option value="$PROJECT_DIR$/JDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/ACIDMaven/pom.xml" />
+        <option value="$PROJECT_DIR$/Log4j/pom.xml" />
       </list>
     </option>
   </component>

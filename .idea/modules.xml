@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ACID/ACID.iml" filepath="$PROJECT_DIR$/ACID/ACID.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ACIDMaven/ACIDMaven.iml" filepath="$PROJECT_DIR$/ACIDMaven/ACIDMaven.iml" />
       <module fileurl="file://$PROJECT_DIR$/AOP/AOP.iml" filepath="$PROJECT_DIR$/AOP/AOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/AOP1/AOP1.iml" filepath="$PROJECT_DIR$/AOP1/AOP1.iml" />
       <module fileurl="file://$PROJECT_DIR$/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/JDBC/JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Log4j/Log4j.iml" filepath="$PROJECT_DIR$/Log4j/Log4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sping5.iml" filepath="$PROJECT_DIR$/Sping5.iml" />
     </modules>
   </component>
