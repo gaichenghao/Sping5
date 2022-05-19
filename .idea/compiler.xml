@@ -10,14 +10,24 @@
         <module name="Log4j" />
         <module name="JDBC" />
         <module name="AOP" />
+        <module name="webfluxDemo1" />
         <module name="ACIDMaven" />
+        <module name="demoreactor" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ACIDMaven" target="8" />
       <module name="AOP" target="8" />
+      <module name="demoreactor" target="1.8" />
       <module name="JDBC" target="8" />
       <module name="Log4j" target="8" />
+      <module name="webfluxDemo1" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demoreactor" options="-parameters" />
+      <module name="webfluxDemo1" options="-parameters" />
+    </option>
   </component>
 </project>
